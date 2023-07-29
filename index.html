@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script.js" defer></script>
+
   
   <script src="README.md" defer></script>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion Website</title>
+  <title>Fashion Hub</title>
   <style>
     /* Reset default browser styles */
     body, h1, p, ul, li {
@@ -19,7 +21,7 @@
     }
     /* Header styles v*/
     header {
-      background-color: #333;
+      background-color: #05058e;
       color: #fff;
       padding: 1rem;
       text-align: center;
@@ -29,7 +31,7 @@
     }
     /* Navigation styles */
     nav {
-      background-color: #444;
+      background-color: #dbc623;
       display: flex;
       justify-content: center;
       padding: 0.5rem;
@@ -120,6 +122,9 @@
     </div>
     <!-- Add more product divs as needed -->
   </section>
+  <div id="cart">
+    <span>Cart: <span id="cart-count">0</span></span>
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -127,3 +132,14 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Website</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<!-- ... Rest of the HTML code remains unchanged ... -->
+
